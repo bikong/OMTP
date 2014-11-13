@@ -1,22 +1,29 @@
-This toolkit includes the matlab implementation of grid search, particle swarm optimization, genetic algorithm and gravitational search algorithm for parameters tuning in Support Vector Machine(SVM)/Support Vector Regression(SVR). Each algorithm has been implemented in two forms: Double Parameters(error penalty parameters c, kernel parameter g) Simultaneous Optimization and Triple Parameters(error penalty parameters c, kernel parameter g, insensitive loss function parameter p) Simultaneous Optimizaton. 
+This toolkit includes the MATLAB implementation of grid search, particle swarm optimization, genetic algorithm and gravitational search algorithm for parameters tuning in Support Vector Machine(SVM). Each algorithm has been implemented in two forms: Double Parameters Simultaneous Optimization(error penalty parameters c, kernel parameter g) and Triple Parameters Simultaneous Optimization(error penalty parameters c, kernel parameter g, insensitive loss function parameter p).
 
+
+================================CG_SVR=======================================
 %% psoSVRcg : particle swarm optimization for tuning parameters c,g in SVR.
 %% gaSVRcg : genetic algorithm for tuning parameters c,g in SVR. 
 %% gsSVRcg: grid search algorithm for tuning parameters c,g in SVR. 
 %% gsasVRcg: gravitational search algorithm for tuning parameters c,g in SVR.
 
+
+================================CGP_SVR======================================
 %% psoSVRcgp : particle swarm optimization for tuning parameters c,g,p in SVR.
 %% gaSVRcgp : genetic algorithm for tuning parameters c,g,p in SVR. 
 %% gsSVRcgp: grid search algorithm for tuning parameters c,g,p in SVR. 
 %% gsasVRcgp: gravitational search algorithm for tuning parameters c,g,p in SVR.
 
+
 %%About optimization algorithm's parameters:
-For each optimization algorithms, there are some inner parameters,and you can keep the default values or adjust them for better serving your application.
+For each optimization algorithms, there are some inner parameters, you can keep the default values or adjust them for better serving your application.
+
 
 %% GNU GENERAL PUBLIC LICENSE V3.0
 %% NOTE: HERE USE THE Chih-Jen Lin'S LIBSVM AS THE INTERNAL SVR/SVM.
+%% NOTE: HERE USE THE GATBX AS TOOL FOR IMPLEMENTATION OF GENETIC ALGORITHM
 %% OBTAIN libSVM HERE : http://www.csie.ntu.edu.tw/~cjlin/
-%% YOU CAN WRITE SUPPORT VECTOR MACHINE AS WELL AND CHANGE RELEVANT CODE FOR YOUR APPLICATION.
+%% ALSO, YOU CAN WRITE SUPPORT VECTOR MACHINE AS WELL AND CHANGE RELEVANT CODE FOR YOUR OWN APPLICATION.
 
 
 
